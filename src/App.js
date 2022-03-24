@@ -9,7 +9,14 @@ function App() {
         <header className="App-header">Dictionary</header>
         <Dictionary />
         <footer className="App-footer">
-          Coded by Barbara Palleros, open source on GitHub
+          Coded by Barbara Palleros,{" "}
+          <a
+            href="https://github.com/kibi-00/dictionary-project"
+            target="_blank"
+            rel="noreferrer"
+          >
+            open source on GitHub
+          </a>
         </footer>
       </div>
     </div>
