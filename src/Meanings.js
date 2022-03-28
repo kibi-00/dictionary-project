@@ -5,21 +5,23 @@ import Synonyms from "./Synonyms";
 export default function Meanings(props) {
   return (
     <div className="Meanings">
-      <h5>{props.meanings.partOfSpeech}</h5>
-      <Synonyms synonyms={props.meanings.synonyms} />
+      <section>
+        <h5>{props.meanings.partOfSpeech}</h5>
+        <Synonyms synonyms={props.meanings.synonyms} />
 
-      <hr />
-      {props.meanings.definitions.map((definitions, index) => (
-        <div key={index}>
-          <p>
-            <strong>Definition: </strong>
-            {definitions.definition}
-          </p>
-          <p className="Meanings-example">{definitions.example}</p>
+        <hr />
+        {props.meanings.definitions.map((definitions, index) => (
+          <div key={index}>
+            <p>
+              <span className="definition">Definition: </span>
+              {definitions.definition}
+            </p>
+            <p className="Meanings-example">{definitions.example}</p>
 
-          <br />
-        </div>
-      ))}
+            <br />
+          </div>
+        ))}
+      </section>
     </div>
   );
 }

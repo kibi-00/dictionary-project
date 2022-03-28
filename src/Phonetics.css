@@ -1,0 +1,24 @@
+.Phonetics .audio-and-text {
+  line-height: 40px;
+}
+.Phonetics .listen-button {
+  text-decoration: none;
+  margin-right: 10px;
+  font-weight: bold;
+  transition: all 150ms ease-in-out;
+  border-radius: 50px;
+  padding: 6px 15px;
+  border: solid 2px var(--first-color);
+  color: var(--first-color);
+  background-color: var(--second-color);
+}
+
+.Phonetics .listen-button:hover {
+  color: var(--light-color);
+  background-color: var(--background-color);
+}
+
+.Phonetics .phonetic-text {
+  color: var(--background-color);
+  opacity: 0.9;
+}

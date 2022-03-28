@@ -1,0 +1,31 @@
+.Dictionary h1 {
+  font-size: 17px;
+  margin-bottom: 15px;
+  color: var(--third-color);
+  text-align: left;
+}
+
+.Dictionary section {
+  background-color: rgba(var(--light-color), 0.3);
+  border-radius: 8px;
+  padding: 20px 20px;
+  margin: 20px auto;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.Dictionary input {
+  border-radius: 4px;
+  padding: 6px 15px;
+}
+
+.Dictionary .search-button {
+  color: var(--third-color);
+  font-weight: bold;
+  background-color: white;
+  transition: all 150ms ease-in-out;
+}
+
+.Dictionary .search-button:hover {
+  color: rgb(var(--light-color));
+  background-color: var(--third-color);
+}

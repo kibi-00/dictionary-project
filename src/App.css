@@ -1,15 +1,28 @@
+:root {
+  --first-color: #151d3b;
+  --second-color: #6ebf8b;
+  --third-color: #d82148;
+  --light-color: 218, 219, 189;
+}
+
 .App {
   text-align: center;
-  margin: 30px auto;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 .App-header {
   font-size: 45px;
-  color: blueviolet;
+  color: var(--first-color);
   font-weight: bold;
 }
 
 .App-footer {
   font-size: 11px;
   margin: 30px auto;
+  color: var(--first-color);
+}
+
+.App-footer a {
+  color: var(--first-color);
 }

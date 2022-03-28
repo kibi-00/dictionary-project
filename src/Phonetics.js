@@ -1,23 +1,24 @@
 import React from "react";
+import "./Phonetics.css";
 
 export default function Phonetics(props) {
   console.log(props.phonetics);
 
   return (
-    <div>
+    <div className="Phonetics">
       {props.phonetics.map((phonetic, index) => {
         if (index > 0) {
           return (
-            <div key={index}>
+            <div key={index} className="audio-and-text">
               <a
                 href={phonetic.audio}
                 target="_blank"
                 rel="noreferrer"
-                className="btn btn-warning"
+                className="listen-button"
               >
                 Listen
               </a>{" "}
-              <span>{phonetic.text}</span>
+              <span className="phonetic-text">{phonetic.text}</span>
             </div>
           );
         } else {
