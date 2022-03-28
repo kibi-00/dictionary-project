@@ -29,7 +29,7 @@ export default function Dictionary() {
         <h1>Type a word to find its meaning below:</h1>
         <form onSubmit={handleSubmit}>
           <div className="row">
-            <div className="col-9">
+            <div className="col-sm-9">
               <input
                 type="search"
                 placeholder="Type a word.."
@@ -37,7 +37,7 @@ export default function Dictionary() {
                 className="w-100"
               />
             </div>
-            <div className="col-3">
+            <div className="col-sm-3">
               <input
                 type="submit"
                 value="Search"

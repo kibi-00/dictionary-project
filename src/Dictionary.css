@@ -1,12 +1,12 @@
 .Dictionary h1 {
-  font-size: 17px;
+  font-size: 20px;
   margin-bottom: 15px;
   color: var(--third-color);
   text-align: left;
 }
 
 .Dictionary section {
-  background-color: rgba(var(--light-color), 0.3);
+  background-color: var(--light-color);
   border-radius: 8px;
   padding: 20px 20px;
   margin: 20px auto;

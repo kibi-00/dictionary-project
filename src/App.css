@@ -1,28 +1,34 @@
 :root {
-  --first-color: #151d3b;
-  --second-color: #6ebf8b;
-  --third-color: #d82148;
-  --light-color: 218, 219, 189;
+  --first-color: #233142;
+  --second-color: #455d7a;
+  --third-color: #f95959;
+  --light-color: #e3e3e3;
 }
 
 .App {
   text-align: center;
   margin: 0 auto;
   padding: 30px;
+  max-width: 800px;
+  background-color: #455d7a;
 }
 
 .App-header {
   font-size: 45px;
-  color: var(--first-color);
+  color: white;
   font-weight: bold;
 }
 
 .App-footer {
-  font-size: 11px;
+  font-size: 12px;
   margin: 30px auto;
-  color: var(--first-color);
+  color: white;
 }
 
 .App-footer a {
-  color: var(--first-color);
+  color: white;
+}
+
+.App-footer a:hover {
+  font-weight: bold;
 }

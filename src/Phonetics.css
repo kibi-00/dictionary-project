@@ -8,14 +8,14 @@
   transition: all 150ms ease-in-out;
   border-radius: 50px;
   padding: 6px 15px;
-  border: solid 2px var(--first-color);
-  color: var(--first-color);
-  background-color: var(--second-color);
+  border: solid 2px var(--third-color);
+  color: var(--light-color);
+  background-color: var(--third-color);
 }
 
 .Phonetics .listen-button:hover {
-  color: var(--light-color);
-  background-color: var(--background-color);
+  color: var(--third-color);
+  background-color: var(--light-color);
 }
 
 .Phonetics .phonetic-text {
