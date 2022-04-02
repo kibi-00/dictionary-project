@@ -11,6 +11,8 @@
 .Meanings-example {
   color: var(--second-color);
   font-style: italic;
+  font-size: 16px;
+  margin-top: 5px;
 }
 
 .Meanings p {

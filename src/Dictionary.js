@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Dictionary.css";
 import Results from "./Results";
+import Images from "./Images";
 
 export default function Dictionary() {
   const [keyword, setKeyword] = useState(null);
@@ -48,6 +49,7 @@ export default function Dictionary() {
         </form>
       </section>
       <Results info={results} />
+      <Images info={results} />
     </div>
   );
 }

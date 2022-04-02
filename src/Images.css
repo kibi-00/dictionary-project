@@ -1,0 +1,8 @@
+.Images {
+  text-align: center;
+}
+.Images-photo {
+  max-width: 400px;
+  padding: 5px 2px;
+  border-radius: 15px;
+}

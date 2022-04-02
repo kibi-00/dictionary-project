@@ -6,6 +6,7 @@
 }
 
 .Synonyms li {
-  margin: auto 10px;
+  margin: auto 8px;
   color: var(--second-color);
+  font-size: 15px;
 }
