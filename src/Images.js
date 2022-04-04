@@ -9,7 +9,16 @@ export default function Images(props) {
     if (!props.info) {
       return null;
     } else {
-      makeCall();
+      let apiKey = "563492ad6f91700001000001293fadf8f86d4a648ae25355ccd5ec6f";
+
+      axios
+        .get(
+          `https://api.pexels.com/v1/search?query=${props.info.word}&per_page=6`,
+          {
+            headers: { Authorization: `${apiKey}` },
+          }
+        )
+        .then(getImages);
     }
   }, [props.info]);
 
@@ -17,27 +26,13 @@ export default function Images(props) {
     setImage(response.data.photos);
   }
 
-  function makeCall() {
-    let apiKey = "563492ad6f91700001000001293fadf8f86d4a648ae25355ccd5ec6f";
-
-    axios
-      .get(
-        `https://api.pexels.com/v1/search?query=${props.info.word}&per_page=6`,
-        {
-          headers: { Authorization: `${apiKey}` },
-        }
-      )
-      .then(getImages);
-  }
-
   if (image.length) {
-    console.log(image);
     return (
       <div className="Images">
         <div className="row">
           {image.map((photo, index) => (
             <div className="col" key={index}>
-              <a href={photo.src.original} target="_blank">
+              <a href={photo.src.original} target="_blank" rel="noreferrer">
                 <img
                   src={photo.src.landscape}
                   className="Images-photo img-fluid"
