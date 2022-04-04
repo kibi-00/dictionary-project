@@ -8,6 +8,22 @@
   margin-bottom: 15px;
 }
 
+.Images .reference-link {
+  font-size: 10px;
+  color: var(--light-color);
+  text-align: right;
+}
+
+.Images .reference-link a {
+  color: var(--light-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.Images .reference-link a:hover {
+  font-size: 12px;
+}
+
 @media (min-width: 992px) {
   .Images {
     margin-top: 20px;

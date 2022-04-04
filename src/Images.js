@@ -9,6 +9,7 @@ export default function Images(props) {
     if (!props.info) {
       return null;
     } else {
+      //Api documentation: https://www.pexels.com/api/documentation/
       let apiKey = "563492ad6f91700001000001293fadf8f86d4a648ae25355ccd5ec6f";
 
       axios
@@ -43,6 +44,12 @@ export default function Images(props) {
             </div>
           ))}
         </div>
+        <p className="reference-link">
+          Photos provided by{" "}
+          <a href="https://www.pexels.com/" target="_blank" rel="noreferrer">
+            Pexels
+          </a>
+        </p>
       </div>
     );
   } else {
