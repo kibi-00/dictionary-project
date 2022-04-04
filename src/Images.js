@@ -49,6 +49,22 @@ export default function Images(props) {
             ></img>
           </div>
         </div>
+        <div className="row">
+          <div className="col-6">
+            <img
+              src={image[2].src.landscape}
+              className="Images-photo d-flex w-100"
+              alt="image one"
+            ></img>
+          </div>
+          <div className="col-6">
+            <img
+              src={image[3].src.landscape}
+              className="Images-photo d-flex w-100"
+              alt="image two"
+            ></img>
+          </div>
+        </div>
       </div>
     );
   } else {

@@ -3,6 +3,7 @@
 }
 .Images-photo {
   max-width: 400px;
-  padding: 5px 2px;
-  border-radius: 15px;
+  border-radius: 12px;
+  border: solid 3px var(--light-color);
+  margin-bottom: 15px;
 }

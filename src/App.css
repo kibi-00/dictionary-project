@@ -1,16 +1,8 @@
-:root {
-  --first-color: #233142;
-  --second-color: #455d7a;
-  --third-color: #f95959;
-  --light-color: #e3e3e3;
-}
-
 .App {
   text-align: center;
   margin: 0 auto;
   padding: 30px;
-  max-width: 800px;
-  background-color: #455d7a;
+  max-width: 1000px;
 }
 
 .App-header {
