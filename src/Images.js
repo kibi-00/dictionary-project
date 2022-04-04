@@ -31,39 +31,22 @@ export default function Images(props) {
   }
 
   if (image.length) {
+    console.log(image);
     return (
       <div className="Images">
         <div className="row">
-          <div className="col-6">
-            <img
-              src={image[0].src.landscape}
-              className="Images-photo d-flex w-100"
-              alt="image one"
-            ></img>
-          </div>
-          <div className="col-6">
-            <img
-              src={image[1].src.landscape}
-              className="Images-photo d-flex w-100"
-              alt="image two"
-            ></img>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-6">
-            <img
-              src={image[2].src.landscape}
-              className="Images-photo d-flex w-100"
-              alt="image one"
-            ></img>
-          </div>
-          <div className="col-6">
-            <img
-              src={image[3].src.landscape}
-              className="Images-photo d-flex w-100"
-              alt="image two"
-            ></img>
-          </div>
+          {image.map((photo, index) => (
+            <div className="col" key={index}>
+              <a href={photo.src.original} target="_blank">
+                <img
+                  src={photo.src.landscape}
+                  className="Images-photo img-fluid"
+                  alt={photo.alt}
+                  title={photo.alt}
+                ></img>
+              </a>
+            </div>
+          ))}
         </div>
       </div>
     );

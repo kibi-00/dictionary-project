@@ -2,8 +2,17 @@
   text-align: center;
 }
 .Images-photo {
-  max-width: 400px;
+  min-width: 150px;
   border-radius: 12px;
   border: solid 3px var(--light-color);
   margin-bottom: 15px;
+}
+
+@media (min-width: 992px) {
+  .Images {
+    margin-top: 20px;
+  }
+  .Images-photo {
+    min-width: 400px;
+  }
 }

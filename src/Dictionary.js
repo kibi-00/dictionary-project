@@ -48,8 +48,14 @@ export default function Dictionary() {
           </div>
         </form>
       </section>
-      <Results info={results} />
-      <Images info={results} />
+      <div className="row">
+        <div className="col-lg-6">
+          <Results info={results} />
+        </div>
+        <div className="col-lg-6">
+          <Images info={results} />
+        </div>
+      </div>
     </div>
   );
 }
